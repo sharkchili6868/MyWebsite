@@ -11,9 +11,9 @@ function App() {
       <Fragment>
       <header>
           <div className="title">Chris's Portfolio</div>
-          <div className="project"><i className="fa fa-archive"></i> Project</div>
-          <div className="github"><i className="fa fa-github"></i> <a href="https://github.com/chrisapotheke/">GitHub</a></div>
-          <div className="linkedin"><i className="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/christopher-q/">Linkedin</a></div>
+          <div className="project"><i className="fa fa-archive"></i> <span className="hidden-sm-down">Project</span></div>
+          <div className="github"><i className="fa fa-github"></i> <a href="https://github.com/chrisapotheke/"><span className="hidden-sm-down">GitHub</span></a></div>
+          <div className="linkedin"><i className="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/christopher-q/"><span className="hidden-sm-down">Linkedin</span></a></div>
       </header>
       <div className="intro">
         <div className="about"><i className="fa fa-cube"></i> About</div>
@@ -29,9 +29,12 @@ function App() {
           For me, web development is more like an branch of art. I am finicky about my codes because I treat them as artistic masterpieces. Oh! Speaking of arts,
           I haven't tell you that my favorite musician is Beethoven. (Maybe search me on Youtube? I play Beethoven a lot LOL!) 
         </p>
-      </div>
+        <div className="education"><i className="fa fa-graduation-cap"></i> Education</div>
+        <div className="masters">New York University</div>
+        </div>
       </Fragment>
       <Route exact strict path='project' component={Project}/>
+      
     </Router>
   );
 }
