@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Project from './components/Project/Project';
@@ -9,11 +8,12 @@ function App() {
   return (
     <Router>
       <Fragment>
+        <div className="container">
       <header>
           <div className="title">Chris's Portfolio</div>
-          <div className="project"><i className="fa fa-archive"></i> <span className="hidden-sm-down">Project</span></div>
-          <div className="github"><i className="fa fa-github"></i> <a href="https://github.com/chrisapotheke/"><span className="hidden-sm-down">GitHub</span></a></div>
-          <div className="linkedin"><i className="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/christopher-q/"><span className="hidden-sm-down">Linkedin</span></a></div>
+          <div className="project"><i className="fa fa-archive"></i> <span className="d-none d-sm-block">Project</span></div>
+          <div className="github"><i className="fa fa-github"></i> <a href="https://github.com/chrisapotheke/"><span className="d-none d-sm-block">GitHub</span></a></div>
+          <div className="linkedin"><i className="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/christopher-q/"><span className="d-none d-sm-block">Linkedin</span></a></div>
       </header>
       <div className="intro">
         <div className="about"><i className="fa fa-cube"></i> About</div>
@@ -31,6 +31,7 @@ function App() {
         </p>
         <div className="education"><i className="fa fa-graduation-cap"></i> Education</div>
         <div className="masters">New York University</div>
+        </div>
         </div>
       </Fragment>
       <Route exact strict path='project' component={Project}/>
