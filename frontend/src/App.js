@@ -10,7 +10,7 @@ function App() {
       <Fragment>
       <header>
           <div className="title">Chris's Portfolio</div>
-          <div className="project"><i className="fa fa-archive"></i> <span className="d-none d-sm-inline">Linkedin</span></div>
+          <div className="project"><i className="fa fa-archive"></i> <span className="d-none d-sm-inline">Projects</span></div>
           <div className="github"><i className="fa fa-github"></i> <a href="https://github.com/chrisapotheke/"><span className="d-none d-sm-inline">GitHub</span></a></div>
           <div className="linkedin"><i className="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/christopher-q/"><span className="d-none d-sm-inline">Linkedin</span></a></div>
       </header>
