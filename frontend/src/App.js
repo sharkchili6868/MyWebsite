@@ -8,12 +8,11 @@ function App() {
   return (
     <Router>
       <Fragment>
-        <div className="container">
       <header>
           <div className="title">Chris's Portfolio</div>
-          <div className="project"><i className="fa fa-archive"></i> <span className="d-none d-sm-block">Project</span></div>
-          <div className="github"><i className="fa fa-github"></i> <a href="https://github.com/chrisapotheke/"><span className="d-none d-sm-block">GitHub</span></a></div>
-          <div className="linkedin"><i className="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/christopher-q/"><span className="d-none d-sm-block">Linkedin</span></a></div>
+          <div className="project"><i className="fa fa-archive"></i> <span className="d-none d-sm-inline">Linkedin</span></div>
+          <div className="github"><i className="fa fa-github"></i> <a href="https://github.com/chrisapotheke/"><span className="d-none d-sm-inline">GitHub</span></a></div>
+          <div className="linkedin"><i className="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/christopher-q/"><span className="d-none d-sm-inline">Linkedin</span></a></div>
       </header>
       <div className="intro">
         <div className="about"><i className="fa fa-cube"></i> About</div>
@@ -30,8 +29,23 @@ function App() {
           I haven't tell you that my favorite musician is Beethoven. (Maybe search me on Youtube? I play Beethoven a lot LOL!) 
         </p>
         <div className="education"><i className="fa fa-graduation-cap"></i> Education</div>
-        <div className="masters">New York University</div>
+        <div className="masters">
+          <p><span className="school-name">New York University</span> <span className="time">Aug 2018 - May 2020</span>
+          <br/>
+          M.S. in Computer Engineering
+          </p>
         </div>
+        <div className="bachelors">
+          <p><span className="school-name">University of Illinois, Urbana-Champaign</span> <span className="time">Aug 2014 - May 2018</span>
+          <br/>
+          B.S. in Materials Science and Engineering
+          </p>
+        </div>
+        <div className="stacks"><i className="fa fa-wrench"></i> Stacks</div>
+        <p><span className="skills">Languages</span>:  ES5/ES6, TypeScript, Python, Java</p>
+        <p><span className="skills">Front-End</span>:  React, Angular, HTML5, CSS3, Bootstrap</p>
+        <p><span className="skills">Back-End</span>:  Node, Express, GraphQL, Redux</p>
+        <p><span className="skills">DB</span>:  MongoDB, Redis, MySQL, SQL</p>
         </div>
       </Fragment>
       <Route exact strict path='project' component={Project}/>

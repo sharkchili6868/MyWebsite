@@ -8,6 +8,7 @@ header {
   
 }
 
+
 .title {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -58,8 +59,27 @@ a:link, a:visited, a:active {
   font-weight: bold;
 }
 
+.school-name {
+  font-weight: bold;
+}
+
 .education {
   font-size: 1.2rem;
   margin: 2px;
+  font-weight: bold;
+}
+
+.time {
+  float: right;
+  display: inline-block;
+}
+
+.stacks {
+  font-size: 1.2rem;
+  margin: 2px;
+  font-weight: bold;
+}
+
+.skills {
   font-weight: bold;
 }
