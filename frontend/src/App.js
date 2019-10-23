@@ -1,23 +1,17 @@
-import React, { Fragment } from 'react';
-import 'font-awesome/css/font-awesome.min.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Project from './components/Project/Project';
-import './App.css';
-import DashBoard from './components/DashBoard/DashBoard';
+import React from 'react';
+import MainDashBoard from "./components/MainDashboard/MainDashBoard";
+import ProjectDashBoard from "./components/ProjectDashboard/ProjectDashBoard";
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 
-function App() {
-  return (
-    <Router>
-      <Route path="/" exact>
-      <Fragment>
-        <DashBoard />
-      </Fragment>
-      </Route>
-      <Route path='/project' exact>
-        <Project />
-      </Route>
-    </Router>
-  );
-}
+const App = () => {
+    return (
+        <Router>
+            <div>
+                <Route path='/' exact component={MainDashBoard}/>
+            </div>
+            <Route path='/project' exact component={ProjectDashBoard}/>
+        </Router>
+    )
+};
 
 export default App;

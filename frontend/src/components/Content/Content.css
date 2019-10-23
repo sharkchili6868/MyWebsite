@@ -1,0 +1,38 @@
+.intro {
+    padding: 25px
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.about {
+    font-size: 1.2rem;
+    margin: 2px;
+    font-weight: bold;
+}
+
+.school-name {
+    font-weight: bold;
+}
+
+.education {
+    font-size: 1.2rem;
+    margin: 2px;
+    font-weight: bold;
+}
+
+.time {
+    float: right;
+    display: inline-block;
+}
+
+.stacks {
+    font-size: 1.2rem;
+    margin: 2px;
+    font-weight: bold;
+}
+
+.skills {
+    font-weight: bold;
+}
