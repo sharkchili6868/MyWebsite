@@ -17,6 +17,7 @@ export default function Content(){
                 For me, web development is more like an branch of art. I am finicky about my codes because I treat them as artistic masterpieces. Oh! Speaking of arts,
                 I haven't tell you that my favorite musician is Beethoven. (Maybe search me on Youtube? I play Beethoven a lot LOL!)
             </p>
+            <hr/>
             <div className="education"><i className="fa fa-graduation-cap"/> Education</div>
             <div className="masters">
                 <p><span className="school-name">New York University</span> <span className="time">Aug 2018 - May 2020</span>
@@ -30,6 +31,7 @@ export default function Content(){
                     B.S. in Materials Science and Engineering
                 </p>
             </div>
+            <hr/>
             <div className="stacks"><i className="fa fa-wrench"/> Stacks</div>
             <p><span className="skills">Languages</span>:  ES5/ES6, TypeScript, Python, Java</p>
             <p><span className="skills">Front-End</span>:  React, Angular, HTML5, CSS3, Bootstrap</p>

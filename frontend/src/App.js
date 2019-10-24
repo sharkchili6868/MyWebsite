@@ -4,7 +4,6 @@ import ProjectDashBoard from "./components/ProjectDashboard/ProjectDashBoard";
 import PokemonApp from "./components/myProjects/Pokemon/App/PokemonApp";
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 
-
 const App = () => {
     return (
         <Router>
