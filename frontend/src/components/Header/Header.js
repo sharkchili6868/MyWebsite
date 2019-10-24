@@ -7,9 +7,9 @@ export default function Header(props) {
     return (
             <header>
                 <div className="title">Chris's Portfolio</div>
-                <div className="project"><i className="fa fa-archive"/><Link to={props.direction}><span className="d-none d-sm-inline"> {props.name}</span></Link></div>
-                <div className="github"><i className="fa fa-github"/> <a href="https://github.com/chrisapotheke/"><span className="d-none d-sm-inline">GitHub</span></a></div>
-                <div className="linkedin"><i className="fa fa-linkedin"/> <a href="https://www.linkedin.com/in/christopher-q/"><span className="d-none d-sm-inline">Linkedin</span></a></div>
+                <div className="project"><Link to={props.direction}><i className="fa fa-archive"/><span className="d-none d-sm-inline"> {props.name}</span></Link></div>
+                <div className="github"><a href="https://github.com/chrisapotheke/"><i className="fa fa-github"/> <span className="d-none d-sm-inline">GitHub</span></a></div>
+                <div className="linkedin"><a href="https://www.linkedin.com/in/christopher-q/"><i className="fa fa-linkedin"/> <span className="d-none d-sm-inline">Linkedin</span></a></div>
             </header>
     )
 }
