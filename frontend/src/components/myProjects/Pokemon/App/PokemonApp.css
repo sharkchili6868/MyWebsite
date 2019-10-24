@@ -1,0 +1,24 @@
+.container {
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid tomato;
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+    text-align: center;
+}
+
+.pokeheader {
+    text-align: center;
+}
+
+.pokemon-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    width: 150px;
+    margin: 20px 20px
+}
